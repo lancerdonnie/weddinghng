@@ -616,6 +616,7 @@ footer > span {
 @media screen and (max-width: 415px) {
   nav {
     padding: 21px 10px;
+    padding-right: 110px;
   }
   .clients {
     flex-direction: column;
