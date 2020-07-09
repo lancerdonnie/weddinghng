@@ -91,6 +91,7 @@ nav > div > span {
   font-weight: bolder;
   font-size: 2.5rem;
   padding-right: calc(15% + 20px);
+  text-align: right;
 }
 .secmenu > span {
   margin-bottom: 36px;
@@ -477,9 +478,9 @@ textarea {
 }
 .cont > div > span {
   font-family: 'Airbnb Cereal App Medium';
-  display: block;
+  display: inline-block;
   font-weight: 500;
-  font-size: 24px;
+  /* font-size: 24px; */
   line-height: 31px;
   letter-spacing: 0.1em;
   margin-bottom: 16px;
@@ -576,10 +577,19 @@ footer > span {
   }
   .planleft > span:nth-child(3) {
     margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .contact {
     padding: 110px 20px;
     text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social2 > svg:first-child {
+    margin-left: unset;
   }
 }
 
@@ -597,8 +607,16 @@ footer > span {
   .contact {
     padding: 110px 10px;
   }
+
+  .cont > div > span {
+    font-size: 1rem;
+  }
 }
+
 @media screen and (max-width: 415px) {
+  nav {
+    padding: 21px 10px;
+  }
   .clients {
     flex-direction: column;
   }
@@ -639,5 +657,14 @@ footer > span {
   .planleft2::before {
     bottom: 5px;
     right: 5px;
+  }
+  .cont > div > span {
+    font-size: 0.8rem;
+  }
+  .wedding {
+    padding: 80px 20px;
+  }
+  footer {
+    padding: 20px;
   }
 }
