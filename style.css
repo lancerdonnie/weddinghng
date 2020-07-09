@@ -20,40 +20,21 @@ li {
   list-style: none;
 }
 
-/* .mySlides {
-  display: none !important;
+.slideshow {
+  display: flex;
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.clients {
+  opacity: 0;
+  margin: 0 auto;
+  position: absolute;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.show {
+  opacity: 1;
+  position: static;
+  transition: all 2s ease;
 }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-} */
 
 nav {
   font-family: 'Airbnb Cereal App Book';
@@ -461,7 +442,8 @@ nav > div > span {
   border-radius: 50%;
   cursor: pointer;
 }
-.dots > div:nth-child(2) {
+
+.dot.dotted {
   background-color: #4d4d4d;
 }
 
